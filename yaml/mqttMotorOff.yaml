@@ -1,0 +1,27 @@
+alias: mqtt motor off
+
+description: turns off the motor for the water with mqtt
+
+triggers:
+
+- entity_id:
+
+- input_boolean.dog_water
+
+to:
+
+- "off"
+
+trigger: state
+
+actions:
+
+- data:
+
+topic: home/esp32/relay
+
+payload: "OFF"
+
+action: mqtt.publish
+
+mode: single
