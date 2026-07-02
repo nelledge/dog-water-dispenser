@@ -1,10 +1,10 @@
 # Dog Water Dispenser
 
-A small smart water dispenser project for a dog bowl. It uses an ESP32 to control a 12V motor or pump through a relay, with Home Assistant managing the operation over MQTT. The system can be turned on and off manually from Home Assistant or triggered from an iPhone shortcut.
+A small smart water dispenser project for a dog bowl. It uses an ESP32 to control a 12V pump through a relay, with Home Assistant managing the operation over MQTT. The system can be turned on and off manually from Home Assistant or triggered from an iPhone shortcut.
 
 ## Project overview
 
-This project was built to automate the filling of a dog water bowl. The main idea is simple:
+The project idea:
 
 - A 12V power source powers the pump motor.
 - The 12V supply is stepped down to 5V for the ESP32.
@@ -12,7 +12,6 @@ This project was built to automate the filling of a dog water bowl. The main ide
 - A relay module switches the pump on and off.
 - Home Assistant can control the pump manually or through automations.
 
-The result is a reliable and flexible setup that lets the pump be controlled remotely without needing to interact with the hardware directly.
 
 ## System layout
 
